@@ -1,0 +1,39 @@
+<!-- Add a form that asks for the following information
+Greeting
+Type of event (selected from a few)
+Message
+Submit button
+On submission, the form should be hidden and a card should be shown in place.
+Stretch goals
+
+Use the Unsplash API to pull in a background image based on the type of event. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <form id="greeting-form">
+        <label for="greet">Greeting</label>
+        <input type="text" id="greet" name="greeting" required>
+        <p>Type of Event</p>
+        <input type="radio" id="birthday" name="birthday">
+        <label for="birthday">Birthday</label><br>
+        <input type="radio" id="wedding" name="wedding">
+        <label for="wedding">Wedding</label><br>
+        <input type="radio" id="graduation" name="graduation">
+        <label for="graduation">Graduation</label><br>
+        <label for="message">message</label>
+        <input type="text" id="message" name="message">
+        <input id="submit" type="submit">
+    </form>
+    <div id="cardContainer">
+    
+    </div>
+</body>
+</html>
